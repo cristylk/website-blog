@@ -1,15 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <title>Cristy Koebler's Blog</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<p class="flash">
-    	<%= flash.notice %>
-  	</p>
+	<header>
+    <nav>
+      <ul class="navigation">
+        <li class="nav-links"><a href="http://cristykoebler.com/">Home</a></li>
+        <li class="nav-links"><a href="http://cristykoebler.com/about.html">About</a></li>
+        <li class="nav-links"><a href="http://cristykoebler.com/portfolio.html">Portfolio</a></li>
+        <li class="nav-links"><a href="http://cristykoebler.com/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<p class="flash">
+      <%= flash.notice %>
+</p>
   	<div id="container">
     	<div id="content">
       		<%= yield %>
